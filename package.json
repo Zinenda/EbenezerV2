@@ -1,0 +1,13 @@
+{
+  "name": "EBENEZER",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ivo Zinenda <izinenda@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "lightbox2": "^2.10.0",
+    "masonry-layout": "^4.2.1",
+    "materialize-css": "next"
+  }
+}

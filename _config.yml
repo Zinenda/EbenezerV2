@@ -1,0 +1,47 @@
+title: Ebenezer
+description: Liceu & Instituto Médio Politécnico
+email: info@liceuebenezer.com
+celphone: +258 84 610 1512
+
+permalink: date
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-email-protect
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-analytics
+  - jekyll-pwa-plugin
+
+collections_dir: collections
+collections:
+  main:
+  sobre:
+  galeria:
+
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+pagination:
+  enabled: true
+  per_page: 15
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - bower_components

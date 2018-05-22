@@ -1,0 +1,23 @@
+- link: https://fb.com/
+  title: Facebook
+  icon: facebook-f
+
+- link: https://m.me/
+  title: Facebook Messanger
+  icon: facebook-messanger
+
+- link: https://instagram.com/
+  title: Instagram
+  icon: instagram
+
+- link: +258 84 879 0215
+  title: Telefone
+  icon: phone
+
+- link: +258 87 879 0215
+  title: Telefone Celular
+  icon: mobile
+
+- link: mailto:info@ebenezer.co.mz
+  title: Email
+  icon: envelope

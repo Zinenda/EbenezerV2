@@ -13,5 +13,4 @@ group :jekyll_plugins do
     gem "jekyll-paginate-v2"
     gem "jekyll-email-protect"
     gem "jekyll-analytics"
-    gem "jekyll-pwa-plugin"
 end

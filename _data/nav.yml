@@ -1,0 +1,24 @@
+- link: /
+  title: Página Inicial
+  icon: home
+
+- link: /liceu/
+  title: Liceu Ebenezer
+  icon: school
+
+- link: /imepe/
+  title: IMEPE
+  icon: graduation-cap
+
+- link: /galeria/
+  title: Galeria
+  icon: image
+
+- link: /blog/
+  title: Noticias
+  icon: newspaper
+
+- link: "#contactos"
+  title: Contactos
+  icon: envelope
+  highlight: true

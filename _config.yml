@@ -1,7 +1,6 @@
 title: Ebenezer
 description: Liceu & Instituto Médio Politécnico
 email: info@liceuebenezer.com
-celphone: +258 84 610 1512
 
 permalink: date
 
@@ -14,7 +13,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-analytics
-  - jekyll-pwa-plugin
 
 collections_dir: collections
 collections:
@@ -27,7 +25,7 @@ sass:
   style: compressed
 
 pagination:
-  enabled: true
+  enabled: false
   per_page: 15
   limit: 0
   sort_field: 'date'

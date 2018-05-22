@@ -1,0 +1,18 @@
+<aside id="sideNav" class="sidenav">
+   {% if page.image %}
+        <a href="{{ page.url }}">
+            <img src="{{ page.image }}" alt="{{ page.title }}">
+        </a>
+        <hr>
+    {% endif %}
+    
+    <ul>
+        {% for item in site.data.nav %}
+            <li>
+                <a href="{% if page.layout == "page" %}/{% endif %}{{ item.link }}" title="{{ item.title }}" class="waves-effect waves-primary">
+                    <i class="fas fa-{{ item.icon }} fa-fw"></i> {{ item.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</aside>

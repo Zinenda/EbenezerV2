@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="container">
+    <section class="row">
+        {% for item in site.main limit: 2 %}
+            <div class="col s12 l6 center">
+                <img src="{{ item.image }}" alt="{{ item.title }}" class="halfway-img">
+
+                <div class="card large hoverable white-text" style="background: {{ item.color }}">
+                    <span class="card-title">
+                        <h3 class="bold"><strong>{{ item.title }}</strong></h3>
+                    </span>
+                    
+                    <div class="card-content">
+                        <h4 class="italic"><em>{{ item.description }}</em></h4>
+                        <hr>
+                        {{ item.content }}
+                    </div>
+
+                    <div class="card-action">
+                        <a href="{{ item.link }}" class="btn-flat waves-effect" title="{{ item.title }}" style="border: 1px solid #fff;">Veja Mais</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</section>

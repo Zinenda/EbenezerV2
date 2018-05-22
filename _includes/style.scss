@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import "variables";
-
 body {
     display: flex;
     min-height: 100vh;
@@ -16,5 +14,6 @@ main {
 
 @import 
     "animate-bottom",
-    "materialize"
+    "custom",
+    "materialize/materialize"
 ;

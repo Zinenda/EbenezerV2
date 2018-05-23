@@ -3,18 +3,18 @@
   icon: facebook-f
 
 - link: https://m.me/
-  title: Facebook Messanger
-  icon: facebook-messanger
+  title: Facebook Messenger
+  icon: facebook-messenger
 
 - link: https://instagram.com/
   title: Instagram
   icon: instagram
 
-- link: +258 84 879 0215
+- link: tel:+258 84 879 0215
   title: Telefone
   icon: phone
 
-- link: +258 87 879 0215
+- link: tel:+258 87 879 0215
   title: Telefone Celular
   icon: mobile
 

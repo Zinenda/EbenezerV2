@@ -4,6 +4,7 @@ layout: default
 
 <style>
     .page-header {
+        position: relative;
         background-image: url({{ page.image }});
         background-size: cover;
         background-repeat: no-repeat;
@@ -11,21 +12,35 @@ layout: default
         background-position: center;
         height: 100vh;
     }
+
+    .page-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        text-shadow: -2px 2px #333;
+    }
 </style>
 
 <header class="page-header">
     <div class="page-title">
-        <img src="{{ page.logo }}" style="width: 150px;" height="150px;" alt="{{ page.title}}">
+        {% if page.layout == "page" %}
+            <img src="{{ page.logo }}" style="width: 150px;" height="150px;" alt="{{ page.title}}">
+        {% endif %}
         <h1>{{ page.title }}</h1>
         <a href="#" title="Inscrições" class="btn-large waves-effect waves-light">Inscreva-se <i class="fas fa-edit"></i></a>
-        <a href="#sobre" title="Sobre {{ page.title }}" class="btn-large waves-effect waves-light"><i class="fas fa-info-circle"></i> Sobre</a>
+        {% if page.layout == "page" %}
+            <a href="#sobre" title="Sobre {{ page.title }}" class="btn-large waves-effect waves-light"><i class="fas fa-info-circle"></i> Sobre</a>
+        {% endif %}
         <br><br>
         {% include contacts.html %}
     </div>
 </header>
 
 
-<section class="section">
+<section class="section grey lighten-4">
     {{ content }}
 </section>
 

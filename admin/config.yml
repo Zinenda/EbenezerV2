@@ -9,39 +9,68 @@ media_folder: "assets/img/uploads"
   
 collections:
 
-  - label: "Slider"
-    name: "slider"
-    folder: "collections/_slider"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
-
-  - label: "Sobre"
-    name: "sobre"
-    folder: "collections/_sobre"
+# Liceu Ebenezer Admin Area
+  - label: "Sobre Liceu"
+    name: "sobre_liceu"
+    folder: "collections/_sobre_liceu"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Corpo", name: "body", widget: "markdown"}
 
-  - label: "Serviços"
-    name: "servicos"
-    folder: "collections/_servicos"
+  - label: "Serviços Liceu"
+    name: "servicos_liceu"
+    folder: "collections/_servicos_liceu"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Icones", name: "icon", widget: "string"}
       - {label: "Corpo", name: "body", widget: "markdown"}
 
-  - label: "Planos Mensais"
-    name: "mensalidade"
-    folder: "collections/_mensalidade"
+  - label: "Mensalidade Liceu"
+    name: "mensalidade_liceu"
+    folder: "collections/_mensalidade_liceu"
     create: true
     fields:
       - {label: "Plano", name: "title", widget: "string"}
       - {label: "Preço", name: "price", widget: "number"}
       - {label: "Beneficios", name: "body", widget: "markdown"}
+
+# IMEPE Admin Area
+  - label: "Sobre IMEPE"
+    name: "sobre_imepe"
+    folder: "collections/_sobre_imepe"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Corpo", name: "body", widget: "markdown"}
+
+  - label: "Cursos do IMEPE"
+    name: "cursos_imepe"
+    folder: "collections/_cursos_imepe"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Icones", name: "icon", widget: "string"}
+      - {label: "Corpo", name: "body", widget: "markdown"}
+
+  - label: "Mensalidade IMEPE"
+    name: "mensalidade_imepe"
+    folder: "collections/_mensalidade_imepe"
+    create: true
+    fields:
+      - {label: "Plano", name: "title", widget: "string"}
+      - {label: "Preço", name: "price", widget: "number"}
+      - {label: "Beneficios", name: "body", widget: "markdown"}
+
+# General Admin Area
+  - label: "Localização"
+    name: "location"
+    folder: "collections/_location"
+    create: true
+    fields:
+      - {label: "Province", name: "province", widget: "string"}
+      - {label: "Location", name: "location", widget: "markdown"}
 
   - label: "Galeria"
     name: "gallery"
@@ -50,14 +79,6 @@ collections:
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
-
-  - label: "Localização"
-    name: "location"
-    folder: "collections/_location"
-    create: true
-    fields:
-      - {label: "Province", name: "province", widget: "string"}
-      - {label: "Location", name: "location", widget: "markdown"}
 
   - label: "Noticias"
     name: "posts"

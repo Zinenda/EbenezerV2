@@ -25,3 +25,23 @@ img {
 .inline-list {
     display: inline-flex;
 }
+
+.primary-color {
+    background: $primary-color;
+}
+
+.primary-color-text {
+    color: $primary-color;
+}
+
+.primary-color-light {
+    background: $primary-color-light;
+}
+
+.primary-color-dark {
+    background: $primary-color-dark;
+}
+
+.waves-effect.waves-primary .waves-ripple {
+    background-color: rgba($color: $primary-color, $alpha: .65)
+}

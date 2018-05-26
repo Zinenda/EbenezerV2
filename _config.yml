@@ -17,8 +17,16 @@ plugins:
 collections_dir: collections
 collections:
   main:
-  sobre:
   galeria:
+  location:
+  # Liceu
+  sobre_liceu:
+  servicos_liceu:
+  mensalidade_liceu:
+  # IMEPE
+  sobre_imepe:
+  cursos_imepe:
+  mensalidade_imepe:
 
 sass:
   sass_dir: assets/_sass

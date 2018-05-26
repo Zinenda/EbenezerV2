@@ -7,3 +7,5 @@ layout: page
 ---
 
 {% include liceu/sobre-liceu.html %}
+
+{% include liceu/servicos-liceu.html %}

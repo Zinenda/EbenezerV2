@@ -1,0 +1,28 @@
+<section id="servicos" class="section scrollspy white grey-text text-darken-4">
+    <h3 class="center-align">Serviços <strong class="bold primary-color-text">Liceu</strong></h3>
+    <div class="container">
+        <div class="row">
+            <ul class="tabs">
+                {% for item in site.servicos_liceu %}
+                    <li class="tab">
+                        <a href="#{{ forloop.index }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="row primary-color">
+            <div class="container center">
+                {% for item in site.servicos_liceu %}
+                    <article id="{{ forloop.index }}" class="grey-text text-darken-4">
+                        <p class="bold"><i class="fas fa-{{ item.icon }}"></i> <strong>{{ item.title }}</strong></p>
+
+                        <div class="justify">
+                            {{ item.content }}
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

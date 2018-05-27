@@ -11,3 +11,5 @@ layout: page
 {% include liceu/servicos-liceu.html %}
 
 {% include liceu/mensalidade-liceu.html %}
+
+{% include galeria-blog.html %}

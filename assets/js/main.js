@@ -9,6 +9,7 @@ $(document).ready(function(){
     $('.tooltipped').tooltip();
     $('.collapsible').collapsible();
     $('.carousel').carousel();
+    $('.materialboxed').materialbox();
 
     var $container = $('#masonry-grid');
     // initialize

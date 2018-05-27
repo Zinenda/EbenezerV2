@@ -1,8 +1,8 @@
-<section id="sobre" class="section scrollspy">
+<section id="sobre" class="section scrollspy center white">
     <div class="container">
-        <h3 class="center-align grey-text text-darken-4">Sobre <strong class="bold primary-color-text">Liceu</strong></h3>
+        <h3><strong class="bold primary-color-text">Sobre</strong> Liceu</h3>
 
-        <article class="card-panel hoverable white grey-text text-darken-4">
+        <article class="card-panel hoverable white">
             <div class="container justify">
                 {% for item in site.sobre_liceu limit: 1 %}
                     {{ item.content }}
@@ -13,18 +13,16 @@
         <div class="row">
             {% for item in site.sobre_liceu offset: 1 %}
                 <div class="col s6">
-                    <div class="card hoverable primary-color-light white-text">
-                        <div class="center">
-                            <i class="fas fa-10x fa-{{ item.icon }}"></i>
-                            <h4>{{ item.title }}</h4>
-                        </div>
-
+                    <div class="card hoverable primary-color">
+                        <i class="fas fa-10x fa-{{ item.icon }}"></i>
+                        <h4>{{ item.title }}</h4>
+                        
                         <button class="btn-floating btn-large halfway-fab waves-effect waves-ligght waves-circle activator">
                             <i class="fas fa-plus"></i>
                         </button>
 
-                        <div class="card-reveal grey-text text-darken-4">
-                            <span class="card-title center-align">
+                        <div class="card-reveal">
+                            <span class="card-title">
                                 <i class="fas fa-{{ item.icon }}"></i> {{ item.title }}
                                 <i class="fas fa-times right"></i>
                             </span>

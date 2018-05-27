@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
     {% include head.html %}
-    <body {% if page.layout == "default" %}class="wrapper"{% endif %}>
+    <body {% if page.layout == "default" %}class="wrapper" {% else %} class="grey-text text-darken-4" {% endif %}>
         {% include sidenav.html %}
         
         <main class="animate-bottom">

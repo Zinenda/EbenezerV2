@@ -1,0 +1,38 @@
+<section class="section center">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h3 class="primary-color-text">Galeria</h3>
+
+                {% for item in site.galeria limit: 2 %}
+                    <div class="col s12 l6">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" class="materialboxed">
+                    </div>
+                {% endfor %}
+
+                <a href="/galeria/" class="btn waves-effect" title="Galeria">Veja Mais</a>
+            </div>
+
+            <div class="col s12 l6">
+                <h3>Noticias</h3>
+
+                {% for item in site.posts limit: 1 %}
+                    <article>
+                        <div class="col s12 l4">
+                            <img src="{{ item.image }}" alt="{{ item.title }}">
+                        </div>
+
+                        <div class="col s12 l8 justify">
+                            {{ item.content | truncatewords: 20 }}
+                            <br>
+                            <a href="{{ item.url }}" title="{{ item.title }}" class="btn-flat waves-effect">Leia Mais</a>
+                        </div>
+                    </article>
+                    <hr>
+                {% endfor %}
+
+                <a href="/noticas/" class="btn waves-effect waves-light" title="Noticias">Veja Mais</a>
+            </div>
+        </div>
+    </div>
+</section>

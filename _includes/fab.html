@@ -1,5 +1,12 @@
 <div class="fixed-action-btn">
-    <a data-target="sideNav" class="btn-floating btn-large waves-effect waves-light sidenav-trigger red">
-        <i class="fas fa-bars"></i>
-    </a>
+    {% if page.title == "Ebenezer" %}
+        <a data-target="sideNav" class="btn-floating btn-large waves-effect waves-light sidenav-trigger red">
+            <i class="fas fa-bars"></i>
+        </a>
+
+        {% else %}
+            <a href="/" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="fas fa-home"></i>
+            </a>
+    {% endif %}
 </div>

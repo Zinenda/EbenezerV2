@@ -2,19 +2,19 @@
   title: Página Inicial
   icon: home
 
-- link: /liceu/
+- link: /liceu
   title: Liceu Ebenezer
   icon: school
 
-- link: /imepe/
+- link: /imepe
   title: IMEPE
   icon: graduation-cap
 
-- link: /galeria/
+- link: /galeria
   title: Galeria
   icon: image
 
-- link: /noticias/
+- link: /noticias
   title: Noticias
   icon: newspaper
 

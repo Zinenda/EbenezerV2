@@ -32,9 +32,19 @@ collections:
     folder: "collections/_mensalidade_liceu"
     create: true
     fields:
-      - {label: "Plano", name: "title", widget: "string"}
-      - {label: "Preço", name: "price", widget: "number"}
-      - {label: "Beneficios", name: "body", widget: "markdown"}
+      - {label: "Curso", name: "curso", widget: "string"}
+      - {label: "Inscrição", name: "inscricao", widget: "number"}
+      - {label: "Propina 1º Turno", name: "propina1", widget: "number"}
+      - {label: "Propina 2º Turno", name: "propina2", widget: "number"}
+      - {label: "Alimentação", name: "alimentacao", widget: "number"}
+
+  - label: "Transporte Escolar"
+    name: "transporte_liceu"
+    folder: "collections/_transporte_liceu"
+    create: true
+    fields:
+      - {label: "Destinos", name: "destino", widget: "string"}
+      - {label: "Taxa", name: "taxa", widget: "number"}
 
 # IMEPE Admin Area
   - label: "Sobre IMEPE"

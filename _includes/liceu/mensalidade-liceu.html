@@ -1,0 +1,33 @@
+<section id="mensalidade" class="section scrollspy center grey-text text-darken-4">
+    <div class="container">
+        <h3><strong class="bold primary-color-text">Mensalidade</strong> Liceu</h3>
+
+        <table class="striped highlight responsive-table">
+            <thead class="primary-color">
+                <tr>
+                    <th>Cursos</th>
+                    <th>Inscrição</th>
+                    <th>Propinas 1º Turno</th>
+                    <th>Propinas 2º Turno</th>
+                    <th>Alimentação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for item in site.mensalidade_liceu %}
+                    <tr>
+                        <td class="bold"><strong>{{ item.curso }}</strong></td>
+                        <td>{{ item.inscricao }} MT</td>
+                        <td>{{ item.propina1 }} MT</td>
+                        <td>{{ item.propina2 }} MT</td>
+                        <td>{{ item.alimentacao }} MT</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <button data-target="transporte-escolar" class="modal-trigger btn waves-effect waves-light">Veja Mais</button>
+    </div>
+</section>
+
+{% include liceu/transporte-escolar.html %}

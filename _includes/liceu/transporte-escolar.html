@@ -1,0 +1,24 @@
+<section id="transporte-escolar" class="modal center">
+    <div class="modal-content grey-text text-darken-4">
+        <div class="container">
+            <h4 class="primary-color-text">Transporte</h4>
+            <table class="striped highlight responsive-table">
+                <thead class="primary-color">
+                    <tr>
+                        <th>Destinos</th>
+                        <th>Taxa Mensal</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for item in site.transporte_liceu %}
+                        <tr>
+                            <td>{{ item.destino }}</td>
+                            <td>{{ item.taxa }} MT</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

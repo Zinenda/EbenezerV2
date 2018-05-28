@@ -1,7 +1,7 @@
 <div id="contactos" class="modal">
     <div class="modal-content container">
         <div class="row">
-            <form method="POST" action="https://formspree.io/{{ site.email }}" class="col s12 white-text">
+            <form method="POST" class="col s12" netlify>
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="full_name" name="Nome Completo" type="text" class="validate">
@@ -22,39 +22,11 @@
                         <label for="textarea1">Mensagem</label>
                     </div>
                 </div>
-                <div class="center"><button type="submit" name="submit" class="btn waves-effect waves-light">Envie</button></div>
+                <div class="center"><button type="submit" name="submit" class="btn waves-effect waves-light">Envie <i class="fas fa-share"></i></button></div>
             </form>
 
             <div class="center">
-                <ul class="inline-list">
-                    {% for item in site.data.social limit: 3 %}
-                        <li>
-                            <a 
-                                href="{{ item.link }}" 
-                                title="{{ item.name }}" 
-                                class="btn-floating tooltipped" 
-                                data-position="top" 
-                                data-delay="50"  
-                                data-tooltip="{{ item.name }}">
-                                <i class="fab fa-{{ item.icon }}"></i>
-                            </a>
-                        </li>
-                    {% endfor %}
-
-                    {% for item in site.data.social offset: 3 %}
-                        <li>
-                            <a 
-                                href="{{ item.link }}" 
-                                title="{{ item.name }}" 
-                                class="btn-floating tooltipped" 
-                                data-position="top" 
-                                data-delay="50"  
-                                data-tooltip="{{ item.name }}">
-                                <i class="fas fa-{{ item.icon }}"></i>
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
+                {% include contactos.html %}
             </div>
         </div>
     </div>

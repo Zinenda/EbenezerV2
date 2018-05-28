@@ -17,8 +17,3 @@
 - link: /noticias
   title: Noticias
   icon: newspaper
-
-- link: "#contactos"
-  title: Contactos
-  icon: envelope
-  highlight: true

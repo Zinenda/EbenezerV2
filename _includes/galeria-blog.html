@@ -17,18 +17,20 @@
                 <h3 class="center">Noticias</h3>
 
                 {% for item in site.posts limit: 1 %}
-                    <article>
-                        <div class="col s12 l4">
-                            <img src="{{ item.image }}" alt="{{ item.title }}">
-                        </div>
+                    <article class="white">
+                        <a href="{{ item.url }}">
+                            <div class="col s12 l4">
+                                <img src="{{ item.image }}" alt="{{ item.title }}">
+                            </div>
 
-                        <div class="col s12 l8 justify">
-                            {{ item.content | truncatewords: 20 }} <a href="{{ item.url }}" title="{{ item.title }}">Leia Mais</a>
-                        </div>
+                            <div class="col s12 l8 justify">
+                                <em>{{ item.content | truncatewords: 20 }}</em>
+                            </div>
+                        </a>
                     </article>
                 {% endfor %}
 
-                <div class="center"><a href="/noticas/" class="btn waves-effect waves-light" title="Noticias">Veja Mais</a></div>
+                <div class="center"><a href="/noticias/" class="btn waves-effect waves-light" title="Noticias">Veja Mais</a></div>
             </div>
         </div>
     </div>

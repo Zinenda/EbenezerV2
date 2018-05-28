@@ -2,10 +2,10 @@
     <h3 class="center"><strong class="bold primary-color-text">Serviços</strong> Liceu</h3>
     <div class="container">
         <div class="row">
-            <ul class="tabs tabs-fixed-width grey lighten-4">
+            <ul class="tabs tabs-fixed-width">
                 {% for item in site.servicos_liceu %}
                     <li class="tab">
-                        <a href="#{{ forloop.index }}">{{ item.title }}</a>
+                        <a href="#{{ forloop.index }}" class="grey-text text-darken-4">{{ item.title }}</a>
                     </li>
                 {% endfor %}
             </ul>

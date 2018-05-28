@@ -1,8 +1,6 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
-    $('.tabs').tabs({
-      swipeable: true
-    });
+    $('.tabs').tabs();
     $('.scrollspy').scrollSpy();
     $('.fixed-action-btn').floatingActionButton();
     $('.modal').modal();

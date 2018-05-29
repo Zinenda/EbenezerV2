@@ -1,0 +1,35 @@
+<section id="formulario-inscricao" class="modal">
+    <div class="container">
+        <div class="center">
+            <img src="{{ page.logo }}" alt="{{ page.title }}" style="width: 200px; height: 200px;">
+            <h3>Ficha de Inscrição de Aluno</h3>
+        </div>
+
+        <div class="row">
+            <form action="" class="col s12">
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>Foto</span>
+                        <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                </div>
+
+                <p class="bold">1. DADOS DO ALUNO</p>
+                {% include liceu/form-dados-aluno.html %}
+                
+                <hr>
+
+                <p class="bold">2. DADOS DO ENCARREGADO DE EDUCAÇÃO</p>
+                {% include liceu/form-dados-encaregado.html %}
+
+                <div class="center">
+                    <button type="submit" class="btn-large waves-effect waves-light">Enviar</button>
+                    <button type="reset" class="btn-flat waves-effect">Reescrever</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

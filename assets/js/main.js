@@ -8,6 +8,7 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('.carousel').carousel();
     $('.materialboxed').materialbox();
+    $('.datepicker').datepicker();
 
     var $container = $('#masonry-grid');
     // initialize

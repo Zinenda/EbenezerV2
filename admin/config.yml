@@ -33,10 +33,9 @@ collections:
     create: true
     fields:
       - {label: "Curso", name: "curso", widget: "string"}
-      - {label: "Inscrição", name: "inscricao", widget: "number"}
-      - {label: "Propina 1º Turno", name: "propina1", widget: "number"}
-      - {label: "Propina 2º Turno", name: "propina2", widget: "number"}
-      - {label: "Alimentação", name: "alimentacao", widget: "number"}
+      - {label: "Inscrição", name: "inscricao", widget: "string"}
+      - {label: "Propina 1º Turno", name: "propina1", widget: "string"}
+      - {label: "Propina 2º Turno", name: "propina2", widget: "string"}
 
   - label: "Transporte Escolar"
     name: "transporte_liceu"

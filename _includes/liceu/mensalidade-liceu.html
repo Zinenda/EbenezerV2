@@ -5,11 +5,10 @@
         <table class="striped highlight responsive-table">
             <thead class="primary-color">
                 <tr>
-                    <th>Cursos</th>
+                    <th>Níveis de Ensino</th>
                     <th>Inscrição</th>
                     <th>Propinas 1º Turno</th>
                     <th>Propinas 2º Turno</th>
-                    <th>Alimentação</th>
                 </tr>
             </thead>
 
@@ -17,10 +16,9 @@
                 {% for item in site.mensalidade_liceu %}
                     <tr>
                         <td class="bold"><strong>{{ item.curso }}</strong></td>
-                        <td>{{ item.inscricao }} MT</td>
-                        <td>{{ item.propina1 }} MT</td>
-                        <td>{{ item.propina2 }} MT</td>
-                        <td>{{ item.alimentacao }} MT</td>
+                        <td>{{ item.inscricao }}</td>
+                        <td>{{ item.propina1 }}</td>
+                        <td>{{ item.propina2 }}</td>
                     </tr>
                 {% endfor %}
             </tbody>

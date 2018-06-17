@@ -4,7 +4,7 @@
 
         <div class="row">
             <div class="col s12 l4">
-                <div class="card medium hoverable">
+                <div class="card small hoverable">
                     <div class="card-image">
                         {% for item in site.galeria limit: 1 %}
                             <img src="{{ item.image }}" alt="{{ item.title }}">
@@ -22,7 +22,7 @@
             </div>
 
             <div class="col s12 l4">
-                <div class="card medium hoverable">
+                <div class="card small hoverable">
                     <div class="card-image">
                         {% for item in site.posts limit: 1 %}
                             <img src="{{ item.image }}" alt="{{ item.title }}">
@@ -40,7 +40,7 @@
             </div>
 
             <div class="col s12 l4">
-                <div class="card medium hoverable">
+                <div class="card small hoverable">
                     {% if page.title == "Liceu Ebenezer" %}
                         <div class="card-image">
                             <img src="/assets/img/imepecover.jpg" alt="IMEPE">

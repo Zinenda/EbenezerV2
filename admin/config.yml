@@ -63,6 +63,15 @@ collections:
       - {label: "Icones", name: "icon", widget: "string"}
       - {label: "Corpo", name: "body", widget: "markdown"}
 
+  - label: "Cursos Modulares do IMEPE"
+    name: "modulos_imepe"
+    folder: "collections/_modulos_imepe"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Icones", name: "icon", widget: "string"}
+      - {label: "Corpo", name: "body", widget: "markdown"}
+
   - label: "Mensalidade IMEPE"
     name: "mensalidade_imepe"
     folder: "collections/_mensalidade_imepe"

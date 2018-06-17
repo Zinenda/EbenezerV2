@@ -27,6 +27,7 @@ collections:
   sobre_imepe:
   cursos_imepe:
   mensalidade_imepe:
+  modulos_imepe:
 
 sass:
   sass_dir: assets/_sass

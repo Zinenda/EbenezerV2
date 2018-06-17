@@ -1,0 +1,48 @@
+<style>
+    #imagem-curso {
+        position: relative;
+        background-image: url(/assets/img/uploads/mg_1580.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 50vh;
+    }
+
+    .cursos-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<section id="cursos" class="section">
+    <div class="row">
+        <div id="imagem-curso" class="col s12 l6">
+            <div class="container">
+                <div class="cursos-title white-text">
+                    <h3>CURSOS</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 l6">
+            <div class="row">
+                {% for item in site.cursos_imepe %}
+                    <div class="col s12 l6">
+                        <p class="center-align">
+                            <i class="fas fa-{{ item.icon }}"></i>
+                            <br>
+                            <strong class="bold">{{ item.title }}</strong>
+                        </p>
+
+                        <div class="justify">
+                            {{ item.content }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

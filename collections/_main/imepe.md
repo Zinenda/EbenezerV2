@@ -1,12 +1,10 @@
 ---
-title: IMEPE
-description: Ensino Técnico Profissional
+title: Instituto Médio Politécnico Ebenezer
 image: /assets/img/imepe_logo.svg
 color: "#ffeb88"
 link: /imepe/
 ---
 
-- Multimidia
-- Informática Avançada
-- Contabilidade
-- Aduáneiro
+- Cursos Técnicos de Longa Duração
+- Cursos Técnicos Modulares
+- Formações e Especializações

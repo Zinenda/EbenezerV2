@@ -9,3 +9,5 @@ layout: page
 {% include imepe/cursos.html %}
 
 {% include imepe/cursos-modulares.html %}
+
+{% include galeria-blog.html %}

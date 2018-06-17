@@ -1,8 +1,32 @@
 <div class="fixed-action-btn">
     {% if page.title == "Ebenezer" %}
-        <a data-target="sideNav" class="btn-floating btn-large waves-effect waves-light sidenav-trigger red">
-            <i class="fas fa-bars"></i>
+        <a class="btn-floating btn-large waves-effect waves-circle waves-light red">
+            <i class="fas fa-plus"></i>
         </a>
+
+        <ul>
+            <li>
+                <a 
+                    href="/noticias/"
+                    class="btn-floating btn-large waves-effect waves-circle waves-light tooltipped red"
+                    data-position="left"
+                    data-delay="50"
+                    data-tooltip="Noticias">
+                    <i class="fas fa-newspaper"></i>
+                </a>
+            </li>
+
+            <li>
+                <a 
+                    href="/galeria/"
+                    class="btn-floating btn-large waves-effect waves-circle waves-light tooltipped red"
+                    data-position="left"
+                    data-delay="50"
+                    data-tooltip="Galeria">
+                    <i class="fas fa-image"></i>
+                </a>
+            </li>
+        </ul>
 
         {% else %}
             <a href="/" class="btn-floating btn-large waves-effect waves-light red">

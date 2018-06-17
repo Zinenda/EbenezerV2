@@ -2,14 +2,9 @@
 <html lang="pt">
     {% include head.html %}
     <body {% if page.layout == "default" %}class="wrapper" {% else %} class="grey-text text-darken-4" {% endif %}>
-        {% include sidenav.html %}
-        
         <main class="animate-bottom">
             {{ content }}
             {% include modals.html %}
             {% include fab.html %}
         </main>
-
         {% include scripts.html %}
-    </body>
-</html>

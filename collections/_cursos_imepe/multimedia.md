@@ -1,5 +1,5 @@
 ---
-title: multimédia
+title: Multimédia
 icon: play-circle
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Logistica e Gestão Aduaneira
-icon: moving-tuck
+icon: truck-moving
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit.

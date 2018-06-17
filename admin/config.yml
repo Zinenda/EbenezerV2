@@ -81,6 +81,14 @@ collections:
       - {label: "Preço", name: "price", widget: "number"}
       - {label: "Beneficios", name: "body", widget: "markdown"}
 
+  - label: "Perguntas Frequentes IMEPE"
+    name: "faq_imepe"
+    folder: "collections/_faq_imepe"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Corpo", name: "body", widget: "markdown"}
+
 # General Admin Area
   - label: "Localização"
     name: "location"

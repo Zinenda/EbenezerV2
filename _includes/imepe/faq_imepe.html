@@ -1,0 +1,27 @@
+<style>
+    #faq_imepe {
+        background-image: url(/assets/img/pexels-photo-632470.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<section id="faq_imepe" class="section white">
+    <div class="container">
+        <h3 class="center-align white-text">Perguntas Frequentes</h3>
+        <div class="row">
+            {% for item in site.faq_imepe %}
+                <div class="col s12 l6">
+                    <div class="card small hoverable z-depth-5">
+                        <div class="card-title center">{{ item.title }}</div>
+                        <div class="card-content justify">
+                            {{ item.content }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

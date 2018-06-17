@@ -12,4 +12,6 @@ layout: page
 
 {% include imepe/cursos-modulares.html %}
 
+{% include imepe/faq_imepe.html %}
+
 {% include galeria-blog.html %}

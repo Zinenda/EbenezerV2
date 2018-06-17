@@ -29,6 +29,7 @@ collections:
   mensalidade_imepe:
   modulos_imepe:
   calendario_imepe:
+  faq_imepe:
 
 sass:
   sass_dir: assets/_sass

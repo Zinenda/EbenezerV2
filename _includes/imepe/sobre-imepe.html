@@ -1,0 +1,47 @@
+<section id="sobre-imepe" class="section">
+    <div>
+        <div class="row">
+            <article class="col s12 l6">
+                <div class="card-panel hoverable z-depth-5">
+                    {% for item in site.sobre_imepe limit: 1 %}
+                        <p class="flow-text center-align">
+                            <i class="fas fa-{{ item.icon }}"></i>
+                            <strong class="bold">{{ item.title }}</strong>
+                        </p>
+                            
+                        <div class="justify">
+                            {{ item.content }}
+                        </div>
+                    {% endfor %}
+                </div>
+            </article>
+
+            <article class="col s12 l6">
+                <div class="row">
+                    {% for item in site.sobre_imepe offset: 1 %}
+                        <div class="col s12 l6">
+                            <div class="card hoverable z-depth-5">
+                                <div class="card-title center-align activator">
+                                    <i class="fas fa-2x fa-{{ item.icon }}"></i>
+                                    <br>
+                                    <h4>{{ item.title }} <i class="fas fa-ellipsis-v right"></i></h4>
+                                </div>
+
+                                <div class="card-reveal">
+                                    <div class="card-title center">
+                                        <i class="fas fa-{{ item.icon }}"></i> {{ item.title }}
+                                        <i class="fas fa-times right"></i>
+                                    </div>
+                                    
+                                    <div class="justify">
+                                        {{ item.content }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </article>
+        </div>
+    </div>
+</section>

@@ -6,6 +6,8 @@ logo: /assets/img/imepe_logo.svg
 layout: page
 ---
 
+{% include imepe/sobre-imepe.html %}
+
 {% include imepe/cursos.html %}
 
 {% include imepe/cursos-modulares.html %}

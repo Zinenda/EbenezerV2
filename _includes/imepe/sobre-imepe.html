@@ -1,47 +1,42 @@
-<section id="sobre-imepe" class="section">
-    <div>
-        <div class="row">
-            <article class="col s12 l6">
-                <div class="card-panel hoverable z-depth-5">
-                    {% for item in site.sobre_imepe limit: 1 %}
-                        <p class="flow-text center-align">
-                            <i class="fas fa-{{ item.icon }}"></i>
-                            <strong class="bold">{{ item.title }}</strong>
-                        </p>
-                            
+<section id="sobre_imepe" class="section">
+    <div class="row">
+        <article class="col s12 l6">
+            {% for item in site.sobre_imepe limit: 1 %}
+                <div class="card-panel z-depth-5 hoverable">
+                    <h4 class="center-align"><i class="fas fa-{{ item.icon }}"></i> {{ item.title }}</h4>
+
+                    <div class="container">
                         <div class="justify">
                             {{ item.content }}
                         </div>
-                    {% endfor %}
+                    </div>
                 </div>
-            </article>
+            {% endfor %}
+        </article>
 
-            <article class="col s12 l6">
-                <div class="row">
-                    {% for item in site.sobre_imepe offset: 1 %}
-                        <div class="col s12 l6">
-                            <div class="card hoverable z-depth-5">
-                                <div class="card-title center-align activator">
-                                    <i class="fas fa-2x fa-{{ item.icon }}"></i>
-                                    <br>
-                                    <h4>{{ item.title }} <i class="fas fa-ellipsis-v right"></i></h4>
-                                </div>
+        <article class="col s12 l6">
+            {% for item in site.sobre_imepe offset: 1 %}
+                <div class="col s6 no-padding">
+                    <div class="card z-depth-5 hoverable waves-effect waves-block waves-primary">
+                        <div class="card-title activator center">
+                            <i class="fas fa-2x fa-{{ item.icon }}"></i>
+                            <br>
+                            <h4>{{ item.title }}</h4>
+                        </div>
 
-                                <div class="card-reveal">
-                                    <div class="card-title center">
-                                        <i class="fas fa-{{ item.icon }}"></i> {{ item.title }}
-                                        <i class="fas fa-times right"></i>
-                                    </div>
-                                    
-                                    <div class="justify">
-                                        {{ item.content }}
-                                    </div>
-                                </div>
+                        <div class="card-reveal">
+                            <div class="card-title activator center">
+                                {{ item.title }}
+                                <i class="fas fa-times right"></i>
+                            </div>
+
+                            <div class="justify">
+                                {{ item.content }}
                             </div>
                         </div>
-                    {% endfor %}
+                    </div>
                 </div>
-            </article>
-        </div>
+            {% endfor %}
+        </article>
     </div>
 </section>

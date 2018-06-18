@@ -5,6 +5,4 @@ color: "#ffeb88"
 link: /imepe/
 ---
 
-- Cursos Técnicos de Longa Duração
-- Cursos Técnicos Modulares
-- Formações e Especializações
+- FORMAÇÃO TÉCNICO PROFISSIONAL

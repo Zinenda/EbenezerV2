@@ -6,15 +6,19 @@ layout: default
 <section class="container">
     <section class="row">
         {% for item in site.main reversed limit: 2 %}
-            <div class="col s12 l6 center">
-                <img src="{{ item.image }}" alt="{{ item.title }}" class="halfway-img">
+            <div class="col s12 l6">
+                <div class="center">
+                    <img src="{{ item.image }}" alt="{{ item.title }}" class="halfway-img">
+                </div>
 
                 <div class="card medium hoverable">
-                    <h4 style="color: {{ item.color }};">{{ item.title }}</h4>
-                    <div class="card-content white-text" style="background: {{ item.color }};">
-                        {{ item.content }}
+                    <h4 style="color: {{ item.color }};" class="center-align">{{ item.title }}</h4>
+                    <div class="card-content white-text justify" style="background: {{ item.color }};">
+                        <div class="container">
+                            {{ item.content | upcase }}
+                        </div>
                     </div>
-                    <div class="card-action white">
+                    <div class="card-action white center">
                         <a href="{{ item.link }}" title="{{ item.title }}" class="btn-flat waves-effect">Saiba Mais</a>
                     </div>
                 </div>

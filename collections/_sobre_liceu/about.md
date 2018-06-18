@@ -1,5 +1,6 @@
 ---
 title: Sobre
+icon: info-circle
 ---
 
 Liceu Ebenezer é uma escola orientada a uma educação especial/privada.

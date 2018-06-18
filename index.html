@@ -13,13 +13,13 @@ layout: default
 
                 <div class="card medium hoverable">
                     <h4 style="color: {{ item.color }};" class="center-align">{{ item.title }}</h4>
-                    <div class="card-content white-text justify" style="background: {{ item.color }};">
+                    <div class="card-content justify" style="background: {{ item.color }};">
                         <div class="container">
                             {{ item.content | upcase }}
                         </div>
                     </div>
                     <div class="card-action white center">
-                        <a href="{{ item.link }}" title="{{ item.title }}" class="btn-flat waves-effect">Saiba Mais</a>
+                        <a href="{{ item.link }}" title="{{ item.title }}" class="btn waves-effect waves-light">Saiba Mais</a>
                     </div>
                 </div>
             </div>

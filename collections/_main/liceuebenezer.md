@@ -5,6 +5,6 @@ color: "#fff112"
 link: /liceu/
 ---
 
-- Ensino Primário Completo
-- Ensino Secundário Geral
-- Ensino Pré-Universitário
+- ENSINO PRIMÁRIO COMPLETO
+- ENSINO SECUNDÁRIO GERAL
+- ENSINO PRÉ-UNIVERSITÁRIO

@@ -8,7 +8,9 @@ layout: default
         {% for item in site.main reversed limit: 2 %}
             <div class="col s12 l6">
                 <div class="center">
-                    <img src="{{ item.image }}" alt="{{ item.title }}" class="halfway-img">
+                    <a href="{{ item.link }}">
+                        <img src="{{ item.image }}" alt="{{ item.title }}" class="halfway-img">
+                    </a>
                 </div>
 
                 <div class="card medium hoverable">

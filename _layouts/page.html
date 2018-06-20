@@ -27,7 +27,9 @@ layout: default
 <header class="page-header">
     <div class="page-title">
         {% if page.layout == "page" %}
-            <img src="{{ page.logo }}" style="width: 150px;" height="150px;" alt="{{ page.title}}">
+            <a href="{{ page.url }}">
+                <img src="{{ page.logo }}" style="width: 150px;" height="150px;" alt="{{ page.title}}">
+            </a>
         {% endif %}
         <h1>{{ page.ref }}</h1>
         

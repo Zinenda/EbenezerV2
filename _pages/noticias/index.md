@@ -5,4 +5,5 @@ pagination:
     collection: posts
 image: /assets/img/noticiascover.jpg
 layout: pagination
+ref: Noticias
 ---

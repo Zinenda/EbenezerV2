@@ -1,14 +1,9 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.tabs').tabs();
-    $('.scrollspy').scrollSpy();
+    $('.tooltipped').tooltip();
     $('.fixed-action-btn').floatingActionButton();
     $('.modal').modal();
-    $('.tooltipped').tooltip();
-    $('.collapsible').collapsible();
-    $('.carousel').carousel();
-    $('.materialboxed').materialbox();
-    $('.datepicker').datepicker();
 
     var $container = $('#masonry-grid');
     // initialize

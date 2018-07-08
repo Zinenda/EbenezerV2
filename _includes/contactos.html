@@ -1,9 +1,9 @@
 <ul class="inline-list">
-    {% for item in site.data.contacts limit: 3 %}
+    {% for item in site.data.contacts limit: 2 %}
         <li>
             <a
                 href="{{ item.link }}"
-                class="btn-floating waves-effect waves-light toolttiped"
+                class="btn-floating waves-effect waves-light tooltipped"
                 data-position="bottom"
                 data-delay="50"
                 data-tooltip="{{ item.title }}">
@@ -12,11 +12,11 @@
         </li>
     {% endfor %}
 
-    {% for item in site.data.contacts offset: 3 %}
+    {% for item in site.data.contacts offset: 2 %}
         <li>
             <a
                 href="{{ item.link }}"
-                class="btn-floating waves-effect waves-light toolttiped"
+                class="btn-floating waves-effect waves-light tooltipped"
                 data-position="bottom"
                 data-delay="50"
                 data-tooltip="{{ item.title }}">

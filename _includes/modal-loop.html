@@ -1,0 +1,13 @@
+<div id="{{ item.title | cgi_escape }}{{ forloop.index }}" class="modal grey-text text-darken-4">
+    <div class="modal-content container">
+        <h4 class="center-align">
+            <i class="fas fa-{{ item.icon }}"></i>
+            <br>
+            {{ item.title }}
+        </h4>
+
+        <article class="justify">
+            {{ item.content }}
+        </article>
+    </div>
+</div>

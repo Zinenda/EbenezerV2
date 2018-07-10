@@ -1,0 +1,11 @@
+<div class="col s12 l6 no-padding">
+    <div class="card-panel hoverable" style="height: 20vh;">
+        <a href="#{{ item.title | cgi_escape }}{{ forloop.index }}" title="{{ item.title }}" class="modal-trigger primary-color-text">
+            <h5 class="center-align">
+                <i class="fas fa-{{ item.icon }}"></i>
+                <br>
+                <strong class="bold">{{ item.title }}</strong>
+            </h5>
+        </a>
+    </div>
+</div>

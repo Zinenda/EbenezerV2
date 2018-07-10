@@ -16,27 +16,13 @@
 
         <article class="col s12 l6">
             {% for item in site.sobre_liceu offset: 1 %}
-                <div class="col s12 l6 no-padding">
-                    <div class="card z-depth-5 hoverable primary-color">
-                        <div class="card-title activator center">
-                            <i class="fas fa-2x fa-{{ item.icon }}"></i>
-                            <br>
-                            <h4>{{ item.title }}</h4>
-                        </div>
-
-                        <div class="card-reveal">
-                            <div class="card-title activator center">
-                                {{ item.title }}
-                                <i class="fas fa-times right"></i>
-                            </div>
-
-                            <div class="justify">
-                                {{ item.content }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% include grid-loop.html %}
             {% endfor %}
         </article>
     </div>
+
+    {% for item in site.sobre_liceu offset: 1 %}
+        {% include modal-loop.html %}
+    {% endfor %}
+
 </section>

@@ -15,17 +15,7 @@
         <div class="col s12 l6">
             <div class="row">
                 {% for item in site.modulos_imepe %}
-                    <div class="col s12 l6">
-                        <h5 class="center-align primary-color-text">
-                            <i class="fas fa-{{ item.icon }}"></i>
-                            <br>
-                            <strong class="bold">{{ item.title }}</strong>
-                        </h5>
-
-                        <div class="justify">
-                            {{ item.content }}
-                        </div>
-                    </div>
+                    {% include grid-loop.html %}
                 {% endfor %}
             </div>
         </div>
@@ -38,4 +28,8 @@
             </div>
         </div>
     </div>
+
+    {% for item in site.modulos_imepe %}
+        {% include modal-loop.html %}
+    {% endfor %}
 </section>

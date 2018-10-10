@@ -1,5 +1,5 @@
 ---
 destino: Condomínios Vale Moatize
-taxa: '1600'
+taxa: '1400'
 ---
 

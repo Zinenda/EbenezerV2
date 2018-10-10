@@ -1,4 +1,5 @@
 ---
 destino: Chingodzi e Matema
-taxa: 1600
+taxa: '1800'
 ---
+

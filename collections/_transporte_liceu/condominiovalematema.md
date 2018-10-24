@@ -1,4 +1,5 @@
 ---
 destino: Condomínio Vale - Matema
-taxa: 1600
+taxa: '1800'
 ---
+

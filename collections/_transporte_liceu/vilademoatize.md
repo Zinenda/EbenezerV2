@@ -1,4 +1,5 @@
 ---
 destino: Vila de Moatize
-taxa: 1200
+taxa: '1400'
 ---
+

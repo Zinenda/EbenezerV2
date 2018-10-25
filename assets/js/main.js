@@ -2,7 +2,9 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.tabs').tabs();
     $('.tooltipped').tooltip();
-    $('.fixed-action-btn').floatingActionButton();
+    $('.fixed-action-btn').floatingActionButton({
+      direction: 'bottom'
+    });
     $('.modal').modal();
 
     var $container = $('#masonry-grid');

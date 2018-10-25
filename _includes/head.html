@@ -6,7 +6,10 @@
     
     {% seo %}
 
-    <link rel="shortcut icon" href="{% if page.title == "Liceu Ebenezer" %}/assets/img/liceu_logo.svg {% elsif page.title == "IMEPE" %}/assets/img/imepe_logo.svg{% endif %}" type="image/x-icon">
+    {% if page.title == "Liceu Ebenezer" %}
+        <link rel="shortcut icon" href="/assets/img/liceu_favicon/favicon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="/assets/img/liceu_favicon/apple-touch-icon.png">
+    {% endif %}
 
     {% include scssify.html %}
 </head>

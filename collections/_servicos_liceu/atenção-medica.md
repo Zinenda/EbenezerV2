@@ -2,6 +2,4 @@
 title: Atenção Medica
 icon: user-md
 ---
-Os alunos tem direito a atenção medica, portanto disponibilizamos um técnico de saúde a tempo inteiro para fazer acompanhamento da saúde e integridade física dos alunos.
-
-Este serviço é pago em uma taxa única anual
+A atenção básica consiste na disponibilidade de um técnico de saúde que fará o acompanhamento da saúde e integridade física dos alunos em datas acordadas pela direcção.

@@ -31,12 +31,14 @@ layout: default
                 <img src="{{ page.logo }}" style="width: 150px;" height="150px;" alt="{{ page.title}}">
             </a>
         {% endif %}
-        <h1>{{ page.ref }}</h1>
+        <h1>{{ page.ref | upcase }}</h1>
         
-        {% if page.layout == "page" %}
-            <a href="#formReg" title="Inscrições" class="btn-large waves-effect waves-light modal-trigger">Inscreva-se <i class="fas fa-edit"></i></a>
-        {% endif %}
-        <a href="#contactos" class="btn-large waves-effect waves-light modal-trigger">Contacte-nos <i class="fas fa-envelope-open"></i></a>
+        {% unless page.title == "Inscrições" %}
+            {% if page.layout == "page" %}
+                <a href="/inscricao" title="Inscrições" class="btn-large waves-effect waves-light">Inscreva-se <i class="fas fa-edit"></i></a>
+            {% endif %}
+            <a href="#contactos" class="btn-large waves-effect waves-light modal-trigger">Contacte-nos <i class="fas fa-envelope-open"></i></a>
+        {% endunless %}
         
     </div>
 </header>

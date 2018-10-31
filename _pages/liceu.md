@@ -7,6 +7,23 @@ layout: page
 ref: Liceu Ebenezer
 ---
 
+<script>
+    $('a').click(function(e){
+    e.preventDefault();
+    var link = $(this).attr('href');
+
+    swal({
+        title: "Are you sure?",
+        text: "By clicking 'OK' you will be redirected to the link.",
+        type: "warning",
+        showCancelButton: true
+    },
+    function(){
+        window.location.href = "/imepe/";
+    });
+});
+</script>
+
 {% include liceu/sobre-liceu.html %}
 
 {% include liceu/servicos-liceu.html %}

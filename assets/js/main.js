@@ -6,6 +6,7 @@ $(document).ready(function(){
       direction: 'bottom'
     });
     $('.modal').modal();
+    $('.datepicker').datepicker();
 
     var $container = $('#masonry-grid');
     // initialize

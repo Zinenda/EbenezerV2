@@ -31,14 +31,19 @@ layout: default
                 <img src="{{ page.logo }}" style="width: 150px;" height="150px;" alt="{{ page.title}}">
             </a>
         {% endif %}
-        <h1>{{ page.ref | upcase }}</h1>
+        <h1 class="bolder">{{ page.ref }}</h1>
         
-        {% unless page.title == "Inscrições" %}
-            {% if page.layout == "page" %}
-                <a href="/inscricao" title="Inscrições" class="btn-large waves-effect waves-light">Inscreva-se <i class="fas fa-edit"></i></a>
-            {% endif %}
-            <a href="#contactos" class="btn-large waves-effect waves-light modal-trigger">Contacte-nos <i class="fas fa-envelope-open"></i></a>
-        {% endunless %}
+        {% if page.title == "Liceu Ebenézer" %}
+            <a href="/inscricao_liceu" class="btn-large red waves-effect waves-light">
+                Inscreva-se <i class="fas fa-edit"></i>
+            </a>
+        {% endif %}
+
+        {% if page.title == "IMEPE" %}
+            <a href="/inscricao_imepe" class="btn-large red waves-effect waves-light">
+                Inscreva-se <i class="fas fa-edit"></i>
+            </a>
+        {% endif %}
         
     </div>
 </header>

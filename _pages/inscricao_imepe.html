@@ -1,0 +1,23 @@
+---
+title: Inscrições IMEPE
+ref: Inscrições IMEPE
+layout: page
+image: /assets/img/uploads/mg_1576.jpg
+logo: /assets/img/imepe_logo.svg
+---
+
+<section class="section">
+    <div class="container white">
+        <div class="row">
+            <form name="{{ page.title }}" action="POST" netlify class="col s12">
+                {% include regform/modal-form-header.html %}
+
+                {% include regform/formstudent.html %}
+
+                {% include regform/formfather.html %}
+
+                {% include regform/form-cta.html %}
+            </form>
+        </div>
+    </div>
+</section>

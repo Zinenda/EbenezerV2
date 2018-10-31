@@ -1,9 +1,10 @@
 ---
-title: Ebenezer
+title: Ebenézer
 layout: default
 ---
 
 <section class="container">
+    <br><br><br><br><br>
     <section class="row">
         {% for item in site.main reversed limit: 2 %}
             <div class="center col s12 l6">
@@ -20,6 +21,7 @@ layout: default
 
                     <div class="card-action">
                         <a href="{{ item.link }}" title="{{ item.title }}" class="btn waves-effect waves-light">Saiba Mais</a>
+                        <a href="{{ item.signup }}" title="Inscreva-se" class="btn red waves-effect waves-light">Inscreva-se <i class="fas fa-edit"></i></a>
                     </div>
                 </div>
             </div>

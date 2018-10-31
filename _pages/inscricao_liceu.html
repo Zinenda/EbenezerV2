@@ -1,6 +1,6 @@
 ---
-title: Inscrições
-ref: Inscrições
+title: Inscrições Liceu
+ref: Inscrições Liceu
 layout: page
 image: /assets/img/uploads/img_0080.jpg
 logo: /assets/img/liceu_logo.svg
@@ -9,7 +9,7 @@ logo: /assets/img/liceu_logo.svg
 <section class="section">
     <div class="container white">
         <div class="row">
-            <form name="inscricoes" action="POST" netlify class="col s12">
+            <form name="{{ page.title }}" action="POST" netlify class="col s12">
                 {% include regform/modal-form-header.html %}
 
                 {% include regform/formstudent.html %}

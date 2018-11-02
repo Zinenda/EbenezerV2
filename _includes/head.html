@@ -9,11 +9,23 @@
     {% if page.title == "Liceu Ebenezer" %}
         <link rel="shortcut icon" href="/assets/img/liceu_favicon/favicon.png" type="image/x-icon">
         <link rel="apple-touch-icon" href="/assets/img/liceu_favicon/apple-touch-icon.png">
+
+        {% elsif page.title == "Inscrições Liceu" %}
+            <link rel="shortcut icon" href="/assets/img/liceu_favicon/favicon.png" type="image/x-icon">
+            <link rel="apple-touch-icon" href="/assets/img/liceu_favicon/apple-touch-icon.png">
+
+        {% elsif page.title == "IMEPE" %}
+            <link rel="shortcut icon" href="/assets/img/imepe_logo.svg" type="image/x-icon">
+            <link rel="apple-touch-icon" href="/assets/img/imepe_logo.svg">
+
+        {% elsif page.title == "Inscrições IMEPE" %}
+            <link rel="shortcut icon" href="/assets/img/imepe_logo.svg" type="image/x-icon">
+            <link rel="apple-touch-icon" href="/assets/img/imepe_logo.svg">
     {% endif %}
 
     {% include scssify.html %}
 
-    {% if page.title == "Ebenezer" %}
+    {% if page.title == "Ebenézer" %}
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     {% endif %}
 </head>

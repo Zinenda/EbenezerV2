@@ -1,5 +1,5 @@
 ---
-title: Instituto Médio Politécnico Ebenezer
+title: Instituto Médio e Politécnico Ebenezer
 image: /assets/img/imepe_logo.svg
 color: "#ffeb88"
 link: /imepe/
